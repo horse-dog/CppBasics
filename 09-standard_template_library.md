@@ -291,7 +291,7 @@
 list<int> l = {1, 2};
 auto biit = std::back_inserter(l);             // equal with: back_insert_iterator<list<int>> biit(l);
 auto fiit = std::front_inserter(l);            // equal with: front_insert_iterator<list<int>> fiit(l);
-auto iit  = std::back_inserter(l, l.begin());  // equal with: insert_iterator<list<int>> iit(l, l.begin());
+auto iit  = std::inserter(l, l.begin());       // equal with: insert_iterator<list<int>> iit(l, l.begin());
 ```
 
 #### 顺序容器 std::vector：动态数组
